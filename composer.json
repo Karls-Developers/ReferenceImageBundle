@@ -1,0 +1,21 @@
+{
+    "name": "karls/reference-image-bundle",
+    "version": "1.0.0",
+    "type": "symfony-bundle",
+    "description": "Provides a new Field Type for handling image references.",
+    "require": {
+        "unite-cms/core-bundle": ">=0.8"
+    },
+    "autoload": {
+        "psr-4": { "Karls\\ReferenceImageBundle\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Benedict Lojewski",
+            "email": "lojewski@karls.de"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+services:
+  karls.reference.image.service:
+    public: true
+    class: Karls\ReferenceImageBundle\Service\ReferenceImageService
+    arguments: ['@unite.cms.field_type_manager']
+  Karls\ReferenceImageBundle\Field\Types\ReferenceImageFieldType:
+    tags: [unite_cms.field_type]
+    arguments: ['@validator', '@security.authorization_checker', '@unite.cms.manager', '@doctrine.orm.entity_manager', '@unite.cms.view_type_manager', '@templating.engine.twig', '@router', '@security.csrf.token_manager', '@unite.cms.field_type.config_factory.table_view']
